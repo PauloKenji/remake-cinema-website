@@ -5,30 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goetz Show & Times</title>
-    <link rel="stylesheet" href="static/css/Style.css">
+    <link rel="stylesheet" href="../style/style.css"> 
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/footer.css">
 </head>
+<header>
+    <nav>
+        <div class="nav">
+            <ul>
+                <!-- cria 4 -->
+                <li><a class="active" href="/html/index.html">Home</a></li>
+                <li><a href="/html/Info.html">Informações</a></li>
+                <li><a href="/html/ShowNTimes.html">Shows & Times</a></li>
+                <li><a href="/html/OldGoetz.html">Goetz Antigo</a></li>               
+            </ul>
+            
+        </div>
+    </nav>
+</header>
 <body>
-    <div class="nav">
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#Info">Info</a></li>
-            <li><a href="#Show&Times">Show & Times</a></li>
-            <li><a href="#ImageNew">Image New</a></li>
-            <li><a href="#ImageOld">Image Old</a></li>
-            <li><a href="#SkyVu">Sky-Vu Shows</a></li>
-        </ul>
-    </div>
-    <section class="bodypage">
+    
+    <div class="slider">
         <div class="MovieToday">Filmes Hoje</div>
-        <img class="MovieBanner" src="https://img1.ak.crunchyroll.com/i/spire2/fb783a72b0eb497f6d1f7c8a7b826e8d1650953269_main.jpg" alt="Banner Movie 1">
-        <img class="MovieBanner" src="https://code.org/images/marketing/landingpage-thebadguys-banner.png" alt="Banner Movie 2">
-        <button class="LeftButton" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="RightButton" onclick="plusDivs(+1)">&#10095;</button>
-        
-        <p>neon sign work by <a href="www.neonlab.com">www.neonlab.com</a> and/or <a href="www.neonlab.blogspot.com">   www.neonlab.blogspot.com</a></p>
+        <div class="images">
+            <input type="radio" name="slide" id="img1" checked>
+            <input type="radio" name="slide" id="img2">
 
-        <script src="javaScript/Functions.js"></script>
-    </section>
+            <img src="../sources/BadGuys.png" class="m1" alt="img1">
+            <img src="../sources/Doctor Strange.png" class="m2" alt="img2">
+        </div>
+        <div class="dots">
+            <label for="img1"></label>
+            <label for="img2"></label>
+        </div>
+    </div>
+   
+    <div id="divBusca">
+        <input type="search" id="txtBusca" placeholder="   Pesquisar filme..."/>                     
+    </div>
+
+    <h1></h1>    
+    
+    <div class="informations">
+        <p>GOETZ TEATRO SHOWS & SHOWTIMES <br> PARA INFORMAÇÕES 24 HORAS POR DIA <br> 6 0 8 . 3 2 5 . 45  45</p>
+    </div>
+
+    <table>
+    
+          
+        <th colspan="2" style="background-color: red;">Filmes Hoje</th>
+        <tr>
+            <td>Doutor Estranho no Multiverso da Loucura</td>
+            <td>25 Maio 16:00 - 18:00</td>
+        </tr>
+        <tr>
+            <td>The Bad Guys</td>
+            <td>25 Maio 18:00 - 20:00</td>
+        </tr>
+    </table>
+    <p class="informations" style="font-size: 20px;">BILHETES SÃO DISPONÍVEIS QUANDO O TEATRO ESTÁ ABERTO <br> </p>
     
 </body>
+
+<footer>
+    <div class="Credenciais">
+        <p>Contato: 6 0 8 . 3 2 5 . 45  45</p>
+        <p>Localização: 1704 11th St, Monroe, WI 53566, Estados Unidos</p>
+    </div>
+    <div class="feedback">
+        <p><a href="./FeedbackPage.html">Reclame aqui</a></p>
+    </div>
+
+</footer>
 </html>
